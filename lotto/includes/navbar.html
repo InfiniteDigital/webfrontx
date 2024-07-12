@@ -1,0 +1,69 @@
+
+<nav class="navbar navber-dasktop navbar-dark text-light"
+    style="background: radial-gradient(circle, #673ab7 0, #2f0082 100%)">
+    <div class="container">
+        <span class="navbar-brand m-0" style="font-size: 14px;">
+            <a href="../main/">
+                <img src="#" height="50" class="d-inline-block align-top" alt=""
+                    style="margin-top: -10px; margin-bottom: -15px;">
+            </a>
+        </span>
+
+        <form class="d-flex">
+            <span class="badge badge-pill badge-light p-0"
+                style="margin-top: 8px; margin-bottom: 9px; margin-right: 10px;" data-toggle="modal"
+                data-target=".modal-transfer-history">
+                <img src="../../assets/images/dollar.png" alt="" width="25" height="25">
+                <span style="padding: 0px 10px 0px 10px;" class="member_credit txt_balance">-</span>
+            </span>
+            <a href="" data-toggle="modal" data-target="#modalSetting">
+                <!-- <img src="../../assets/images/user.png"
+                    style="border-radius: 3px; background-color: #FFB401; width: 30px; height: 30px; padding: 3px; margin-top: 6px;"> -->
+            </a>
+            <a href="" class="mx-1 desktop text-decoration-none" data-toggle="modal" data-target="#modalSetting">
+                <small class="text-light" style="margin-bottom: 0px;">ยินดีต้อนรับ</small>
+                <h6 class="text-light mb-0 txt_username" id="user_top"></h6>
+            </a>
+            <a href="" class="text-light ml-1 desktop" data-toggle="modal" data-target="#modalSetting"
+                style="font-size: 20px; margin-top: 5px;"><i class="fas fa-caret-down"></i></a>
+        </form>
+
+    </div>
+</nav>
+
+<!-- Modal Setting -->
+<div class="modal fade" style="background-color: #FEBC14; opacity: 0.97;" data-backdrop="static" id="modalSetting"
+    tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-light text-center"
+            style="background-color: #FEBC14; border-width: 0px; height: 95vh;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="font-size: 35px;">&times;</span>
+            </button>
+            <br />
+            <small style="margin-bottom: 0px;" class="text-dark">ยินดีต้อนรับ</small>
+            <div class="text-center">
+                <!-- <img src="../../assets/images/user.png"
+                    style="border-radius: 3px; background-color: white; width: 100px; padding: 10px; margin-top: 6px; margin-bottom: 10px;"> -->
+            </div>
+            <h6 class="mb-1 txt_username text-dark" id="user_nav"></h6>
+            <p class="text-dark"><i class="far fa-credit-card"></i> เครดิต : <span
+                    class="badge badge-light txt_balance">-</span></p>
+            <hr style="width: 100%; margin: 7px;" />
+            <a href="/profile" type="button" class="btn text-dark btn-outline-light border-0">ข้อมูลผู้ใช้งาน</a>
+            <hr style="width: 100%; margin: 7px;" />
+            <a href="/rule" type="button" class="btn text-dark btn-outline-light border-0">กฎและกติกา</a>
+            <hr style="width: 100%; margin: 7px;" />
+            <a href="/howto" type="button" class="btn text-dark btn-outline-light border-0">วิธีเล่นหวย</a>
+            <hr style="width: 100%; margin: 7px;" />
+            <a href="/links" type="button" class="btn text-dark btn-outline-light border-0">ลิ้งค์ดูผล</a>
+            <hr style="width: 100%; margin: 7px;" />
+            <a href="#" target="_bank" type="button" class="btn text-dark btn-outline-light border-0">ติดต่อเรา</a>
+            <hr style="width: 100%; margin: 7px;" />
+            <div style="position: absolute; bottom: 20px; width: 100%;">
+                <button type="button" class="btn btn-outline-light btn-block border-0 btn-logout"><i
+                        class="fas fa-sign-out-alt"></i> ออกจากระบบ</button>
+            </div>
+        </div>
+    </div>
+</div>
